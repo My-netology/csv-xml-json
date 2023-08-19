@@ -23,6 +23,6 @@ class UtilsTest {
         String json = "[{\"id\":1,\"firstName\":\"Max\",\"lastName\":\"Khrapatiy\",\"country\":\"PL\",\"age\":44}]";
         List<Employee> list = List.of(new Employee(1, "Max", "Khrapatiy", "PL", 44));
         List<Employee> result = jsonToList(json);
-        assertEquals(list, result);
+        assertEquals(result, list);
     }
 }
