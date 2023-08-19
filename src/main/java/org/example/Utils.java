@@ -70,8 +70,6 @@ public class Utils {
         return null;
     }
 
-    ;
-
     public static String listToJSON(List<Employee> list) {
         GsonBuilder builder = new GsonBuilder();
         Gson gson = builder.create();

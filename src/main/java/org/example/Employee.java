@@ -29,4 +29,20 @@ public class Employee {
                 "', age=" + age +
                 "}";
     }
+
+    @Override
+    public boolean equals(Object obj) {
+        Employee objE = (Employee) obj;
+        if (
+                objE.id == this.id
+                        && objE.firstName.equals(this.firstName)
+                        && objE.lastName.equals(this.lastName)
+                        && objE.country.equals(this.country)
+                        && objE.age == this.age
+        ) {
+            return true;
+        } else {
+            return false;
+        }
+    }
 }
